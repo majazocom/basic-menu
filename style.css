@@ -1,0 +1,38 @@
+.nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav.open ul {
+      display: block;
+  }
+  
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  article {
+    min-width: 10rem;
+    min-height: 3rem;
+    background: teal;
+  }
+  
+  section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  section article {
+    min-width: 10rem;
+    min-height: 3rem;
+    background: hotpink;
+  }
+  
+  @media (min-width: 600px) {
+    .nav ul {
+        display: block;
+    }
+  }
